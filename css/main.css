@@ -67,3 +67,7 @@ p {
     border-radius: 50%;
     background-color: #fff;
 }
+
+.header__phone {
+    color: #fff;
+}

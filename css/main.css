@@ -71,3 +71,7 @@ p {
 .header__phone {
     color: #fff;
 }
+
+.content {
+    padding: 130px 0px 0px 0px;
+}

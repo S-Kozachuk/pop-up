@@ -75,3 +75,11 @@ p {
 .content {
     padding: 130px 0px 0px 0px;
 }
+
+.content__container {
+
+}
+
+.content__section {
+    margin: 0px 0 50px 0;
+}

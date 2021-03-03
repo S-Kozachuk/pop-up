@@ -83,3 +83,8 @@ p {
 .content__section {
     margin: 0px 0 50px 0;
 }
+
+.content__section_row {
+    margin: 0px -20px 50px;
+}
+

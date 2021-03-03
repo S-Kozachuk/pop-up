@@ -130,6 +130,11 @@ p {
     visibility: hidden;
 }
 
+.popup:target{
+    opacity: 1;
+    visibility: visible;
+}
+
 .popup__body {
     min-height: 100%;
     display: flex;

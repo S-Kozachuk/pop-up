@@ -113,3 +113,8 @@ p {
 .content__image img {
     max-width: 100%;
 }
+
+.content__subtitle {
+    font-size: 30px;
+    margin-bottom: 0.5em;
+}

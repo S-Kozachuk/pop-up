@@ -107,5 +107,9 @@ p {
 }
 
 .content__text {
-    
+
+}
+
+.content__image img {
+    max-width: 100%;
 }

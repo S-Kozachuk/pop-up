@@ -96,3 +96,7 @@ p {
 
 }
 
+.content__body {
+    flex: 0 1 50%;
+    padding: 0px 20px;
+}

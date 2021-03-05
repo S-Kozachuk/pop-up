@@ -130,6 +130,7 @@ p {
     visibility: hidden;
     overflow-y: auto;
     overflow-x: hidden;
+    transition: all .8s ease 0s;
 }
 
 .popup:target{

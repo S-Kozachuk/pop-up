@@ -133,9 +133,14 @@ p {
     transition: all .8s ease 0s;
 }
 
-.popup:target{
+.popup:target {
     opacity: 1;
     visibility: visible;
+}
+
+.popup:target .popup__content {
+    transform: translate(0px, 0px);
+    opacity: 1;
 }
 
 .popup__area {

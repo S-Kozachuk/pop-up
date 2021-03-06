@@ -166,7 +166,7 @@ p {
     max-width: 800px;
     padding: 30px;
     opacity: 0;
-    transform: translate(0px,-100%);
+    transform: perspective(600px) translate(0px,-100%) rotate(0deg);
     transition: all .8s ease 0s;
 }
 

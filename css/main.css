@@ -133,7 +133,7 @@ p {
     transition: all .8s ease 0s;
 }
 
-.popup:target {
+.popup.open {
     opacity: 1;
     visibility: visible;
 }

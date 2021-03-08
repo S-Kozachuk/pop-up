@@ -48,6 +48,17 @@ function popupOpen(currentPopup) {
     }
 }
 
+// Close popup
+function popupClose(popupActive, doUnlock = true) {
+    if (unlock) {
+        popupActive.classList.remove('open');
+        if (doUnlock) {
+            bodyUnlock();
+        }
+    }
+
+}
+
 // Blocking scroll
 function bodyLock() {
     // Calculating the scrollbar width

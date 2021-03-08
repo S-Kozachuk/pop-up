@@ -37,7 +37,7 @@ function popupOpen(currentPopup) {
         if (popupActive) {
             popupClose(popupActive, false);
         } else {
-            bodyLock();
+            bodyLock(); // Scroll block
         }
         currentPopup.classList.add('open');
         currentPopup.addEventListener("click", function (e) {

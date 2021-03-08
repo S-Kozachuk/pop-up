@@ -78,3 +78,22 @@ function bodyLock() {
         unlock = true;
     }, timeout);
 }
+
+// Unblocking scroll
+function bodyUnlock() {
+    setTimeout(function () {
+        if (lockPadding.lenght > 0) {
+            for (let index = 0; index < lockPadding.lenght; index++) {
+                const el = lockPadding[index];
+                el.style.paddingRight = '0px';
+            }
+        }
+        body.style.paddingRight = '0px';
+        body.classList.remove('lock');
+    }, timeout);
+
+    unlock = false;
+    setTimeout(function () {
+        unlock = true;
+    }, timeout);
+}

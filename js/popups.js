@@ -97,3 +97,11 @@ function bodyUnlock() {
         unlock = true;
     }, timeout);
 }
+
+// Close popup if Esc click
+document.addEventListener ('keydown', function (e) {
+    if (e.number === 27) {
+        const popupActive = document.querySelector('.popup.open');
+        popupClose(popupActive);
+    }
+});

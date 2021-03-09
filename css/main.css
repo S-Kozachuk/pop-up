@@ -138,7 +138,7 @@ p {
 }
 
 .popup:target .popup__content {
-    transform: translate(0px, 0px);
+    transform: perspective(600px) translate(0px, 0%) rotate(0deg);
     opacity: 1;
 }
 

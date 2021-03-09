@@ -169,6 +169,15 @@ p {
     transition: all .8s ease 0s;
 }
 
+.popup__content_image {
+    padding: 0;
+}
+
+.popup__image img {
+    max-width: 100%;
+    vertical-align: top;    
+}
+
 .popup__close {
     position: absolute;
     right: 10px;

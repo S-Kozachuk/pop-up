@@ -105,3 +105,30 @@ document.addEventListener ('keydown', function (e) {
         popupClose(popupActive);
     }
 });
+
+// Polyfil (old browsers support)
+(function () {
+    // checked support
+    if (!Element.prototype.closest) {
+        // realize
+        Element.prototype.closest = function (css) {
+            var node = this;
+            while (node) {
+                if (node.mathes(css)) return node;
+                else node = node.parentElement;
+            }
+            return null;
+        };
+    }
+})();
+
+(function () {
+    // checked support
+    if (!Element.prototype.matches) {
+        // properties defining
+        Element.prototype.matches = Element.prototype.webkitMatchesSelector ||
+            Element.prototype.webkitMatchesSelector ||
+            Element.prototype.mozMatchesSelector ||
+            Element.prototype.msMatchesSelector;
+    }
+})();

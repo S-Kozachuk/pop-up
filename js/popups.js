@@ -56,7 +56,6 @@ function popupClose(popupActive, doUnlock = true) {
             bodyUnlock();
         }
     }
-
 }
 
 // Blocking scroll

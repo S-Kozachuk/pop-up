@@ -11,9 +11,9 @@ if (popupLinks.lenght > 0) {
         const popupLink = popupLinks[index];
         popupLink.addEventListener("click", function (e) {
             const popupName = popupLink.getAttribute('href').replace('#', '');
-            const currentPopup = document.getElementById(popupName);
-            popupOpen(currentPopup);
-            e.preventDefault();
+            const curentPopup = document.getElementById(popupName);
+            popupOpen(curentPopup);
+            e.preventDefault(); 
         });
     }
 }

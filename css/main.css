@@ -129,7 +129,7 @@ p {
     visibility: hidden;
     overflow-y: auto;
     overflow-x: hidden;
-    transition: all .8s ease 0s;
+    transition: all 0.8s ease 0s;
 }
 
 .popup.open {

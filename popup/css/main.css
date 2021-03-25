@@ -137,6 +137,11 @@ p {
     visibility: visible;
 }
 
+.popup:target {
+    opacity: 1;
+    visibility: visible;
+}
+
 .popup:target .popup__content {
     transform: perspective(600px) translate(0px, 0%) rotateX(0deg);
     opacity: 1;

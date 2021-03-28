@@ -71,6 +71,7 @@ function bodyLock() {
     }
     body.style.paddingRight = lockPaddingValue;
     body.classList.add('lock');
+    // Added lock class
 
     unlock = false;
     setTimeout(function () {
@@ -99,7 +100,7 @@ function bodyUnLock() {
 
 // Close popup if Esc click
 document.addEventListener ('keydown', function (e) {
-    if (e.number === 27) {
+    if (e.keyCode === 27) {
         const popupActive = document.querySelector('.popup.open');
         popupClose(popupActive);
     }

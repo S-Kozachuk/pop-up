@@ -63,7 +63,7 @@ function bodyLock() {
     // Calculating the scrollbar width
     const lockPaddingValue = window.innerWidth - document.querySelector('.wrapper').offsetWidth + 'px';
 
-    if (lockPadding.lenght > 0) {
+    if (lockPadding.length > 0) {
         for (let index = 0; index < lockPadding.length; index++) {
             const el = lockPadding[index];
             el.style.paddingRight = lockPaddingValue;
@@ -79,10 +79,10 @@ function bodyLock() {
 }
 
 // Unblocking scroll
-function bodyUnlock() {
+function bodyUnLock() {
     setTimeout(function () {
-        if (lockPadding.lenght > 0) {
-            for (let index = 0; index < lockPadding.lenght; index++) {
+        if (lockPadding.length > 0) {
+            for (let index = 0; index < lockPadding.length; index++) {
                 const el = lockPadding[index];
                 el.style.paddingRight = '0px';
             }

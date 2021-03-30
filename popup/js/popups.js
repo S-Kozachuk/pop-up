@@ -100,7 +100,7 @@ function bodyUnLock() {
 
 // Close popup if Esc click
 document.addEventListener ('keydown', function (e) {
-    if (e.keyCode === 27) {
+    if (e.which == 27) {
         const popupActive = document.querySelector('.popup.open');
         popupClose(popupActive);
     }
